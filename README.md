@@ -4,6 +4,6 @@ Supports both 1D and 2D.
 
 Two slits simulation example:
 ```bash
-./wave2d.py 100 160 -d=10 -2
+./schrodinger.py 100 160 -d=10 -2
 ```
-![2slits](2slits.gif)
+![2slits](./2slits.gif)
