@@ -6,4 +6,4 @@ Two slits simulation example:
 ```bash
 ./schrodinger.py 100 160 -d=10 -2
 ```
-![2slits](./2slits.gif)
+![2slits](2slits.gif)
