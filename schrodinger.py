@@ -73,6 +73,7 @@ for option in options:
 
 # initial wave function at t=0:
 psi = gaussian(grid, shift=[-box[-1]/4*dx, -box[0]/50*dx], std=std) * np.exp(1j * grid[0] * momentum)
+psi *= np.logical_not(walls)
 
 for option in options:
     if option.startswith('-t'): # potential tunneling
