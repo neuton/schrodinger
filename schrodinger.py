@@ -100,6 +100,8 @@ elif ndim == 2:
         ax.imshow(np.ones_like(grid[0]), cmap='gray', vmin=0, vmax=1,
             alpha=np.max([np.array(walls, dtype=float), 1 - np.exp(-2e-5 * potential)], axis=0))
 
+fig.tight_layout()
+
 def update(step):
     psi[...] = normed(solve_forward(dt, psi))
     if ndim == 1:
